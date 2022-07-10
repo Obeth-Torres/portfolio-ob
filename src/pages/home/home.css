@@ -23,16 +23,16 @@
 .about img {
   width: 350px;
 }
-  
-.about h2 {
-  color: var(--ligthtColor);
-  padding: 50px;
-}
+
 
 .skills {
-  margin-top: 250px;
+  margin-top: 130px;
   text-align: center;
   color: var(--lightColor);
+}
+.skills p {
+  margin-bottom: 98px;
+  margin-left: 25px;
 }
 .skills h1 {
   margin-bottom: 50px;

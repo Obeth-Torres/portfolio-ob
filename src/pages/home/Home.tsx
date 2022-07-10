@@ -2,23 +2,26 @@ import React from "react"
 import { FaCodepen, FaGithub, FaYoutube } from "react-icons/fa"
 import fotoPerfil from '../../assets/images/hopeBlue.png'
 import GridHexagons from "./components/GridHexagons"
-import Hexagon from "./components/Hexagon"
 import LineSvg from "./components/LineSvg"
+import { useRef, useEffect } from "react"
 import './home.css'
 
 
 const Home = () => {
+  
   return (
+
     <div className="home">
-        <div className="linesvg">
-          <LineSvg/>
-        </div>
+      <div className="linesvg">
+        <LineSvg/>
+      </div>
       <div className="about">
         <img src={fotoPerfil} alt="Obeth Torres Moreno" />
       </div>
 
       <div className="skills">
-        <h1>  Frontend Skills</h1>
+        <p>scrol </p>
+        <h1 >  Frontend Skills</h1>
         <div className="gridOfHexagons">
           
           <div><GridHexagons skills="CSS " /></div>
