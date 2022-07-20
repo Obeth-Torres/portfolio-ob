@@ -1,27 +1,32 @@
-import React, {  useEffect, useRef, useState  } from 'react'
-import './lineSvg.css'
+import React, {  useEffect, useRef, useState } from 'react'
 
+export const LineSvg = () => {
 
-const LineSvg = () => {
-  const [lengthSvg, setLengthSvg] = useState(0)
-  useEffect(() => {
+  const [length, setLength] = useState(0)
+  const pathRef = useRef(null)
+  
+  
+  useEffect(() => {    
     const updateLength = () => {
-      setLengthSvg(window.scrollY)
-    }
-    window.addEventListener('scroll', updateLength)
-  }, [lengthSvg])
+      setLength(window.scrollY )
+    }    
+    window.addEventListener('scroll', updateLength)   
+
+  }, [length])
   
   return (
-    <div className='lineVideo'>
-
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="600px"
+    <div  >
+      <h1>line test</h1>      
+      <div className="lineSvgAnimation"  >
+      <svg 
+       version="1.1" xmlns="http://www.w3.org/2000/svg"  x="0px" y="0px" width="600px"
           height="1900px" viewBox="0 0 600 1900" enable-background="new 0 0 600 1800"  preserveAspectRatio='xMidYMax meet'>
         <g id="Capa_1">
         </g>
            <g id="Capa_2">
-          <path 
+          <path ref={pathRef}
           strokeDasharray={"4000 4000"}
-          strokeDashoffset={2950 -(lengthSvg *2)}
+          strokeDashoffset={ 3000 - (length * 2)}
           
           fill="none" stroke="#6fa692" stroke-width="5" stroke-miterlimit="10" 
             d="M319.5,0
@@ -47,7 +52,6 @@ const LineSvg = () => {
         </g>
       </svg>
     </div>
+    </div>
   )
 }
-
-export default LineSvg

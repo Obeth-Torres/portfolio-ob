@@ -31,11 +31,11 @@
   color: var(--lightColor);
 }
 .skills p {
-  margin-bottom: 98px;
+  margin-bottom: 100px;
   margin-left: 25px;
 }
 .skills h1 {
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 .gridOfHexagons.last  {
   margin-bottom: 125px;
@@ -67,6 +67,24 @@
   justify-content: center;
 }
 
+.visible {
+  padding: 0px 20px;
+  border-radius: 5px;
+  animation-name: title;
+  animation-duration: 5s ;
+  animation-fill-mode: forwards;
+}
+
+@keyframes title {
+  from {
+    margin-left: 100%;
+
+  }
+  to {
+    margin-left: 0%;
+    border: #6FA692 solid 4px;
+  }
+}
 /* Color Theme Swatches in Hex */
 .The-NM-Laboratory-|-Full-CGI-1-hex { color: #364559; }
 .The-NM-Laboratory-|-Full-CGI-2-hex { color: #7C8EA6; }

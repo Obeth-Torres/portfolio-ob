@@ -3,11 +3,21 @@ import { FaCodepen, FaGithub, FaYoutube } from "react-icons/fa"
 import fotoPerfil from '../../assets/images/hopeBlue.png'
 import GridHexagons from "./components/GridHexagons"
 import LineSvg from "./components/LineSvg"
-import { useRef, useEffect } from "react"
+import { useRef, useEffect, useState } from "react"
 import './home.css'
 
 
 const Home = () => {
+  const myRef = useRef(null!);
+  const [myTitleisVisible, setMyTitleisVisible] = useState(Boolean)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      const entry = entries[0];
+      setMyTitleisVisible(entry.isIntersecting)
+    })
+    observer.observe(myRef.current )
+  }, [])
   
   return (
 
@@ -21,7 +31,12 @@ const Home = () => {
 
       <div className="skills">
         <p>scrol </p>
-        <h1 >  Frontend Skills</h1>
+        <h1 ref={myRef}>  
+          <span className={`${myTitleisVisible ? 'visible' : '' }`} >
+            Frontend Skills
+          </span>
+          
+        </h1>
         <div className="gridOfHexagons">
           
           <div><GridHexagons skills="CSS " /></div>
@@ -33,7 +48,13 @@ const Home = () => {
           <div><GridHexagons skills="Angular"  /></div>
         </div>
 
-        <h1 >Design Skills</h1>
+        <h1  >
+         
+            <span className= {`${myTitleisVisible ? 'visible' : ''} `} >
+              Design Skills
+            </span>
+          
+        </h1>
         <p>Aplicaciones de Adobe</p>
         <div className="gridOfHexagons">
           
