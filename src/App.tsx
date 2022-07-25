@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import Experience from './pages/experience/Experience';
+import Education from './pages/education/Education';
 import Home from './pages/home/Home';
-import Proyects from './pages/proyects/Proyects';
+import Projects from './pages/projects/Projects'
 
 function App() {
   return (
@@ -16,8 +16,9 @@ function App() {
 
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='proyects' element={<Proyects/>} />
-          <Route path='experience' element={<Experience/>} />
+          <Route path='education' element={<Education/>} />
+          <Route path='projects' element={<Projects/> } />         
+
         </Routes>
 
         <Footer />

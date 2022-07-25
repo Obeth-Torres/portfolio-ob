@@ -1,0 +1,22 @@
+.emailJs {
+    width: 500px;
+    height: 500px;
+    border: 2px solid #364559;
+    margin: 100px auto;
+    text-align: center;    
+}
+
+.emailJs form div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0px auto;
+    padding: 10px;
+}
+.emailJs label {
+    text-transform: uppercase;
+}
+.emailJs input {
+    height: 35px;
+}

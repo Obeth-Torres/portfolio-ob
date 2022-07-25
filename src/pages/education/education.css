@@ -1,0 +1,95 @@
+.education {
+    background-color: var(--primaryColor);
+    margin-top: 0px;
+    
+}
+.education h1 {
+    margin: 0px;
+    padding: 50px 0px ;
+    text-align: center;
+    color: var(--darkColor);
+}
+
+.cv {
+    max-width: 900px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;    
+    color: var(--darkColor);
+    text-align: center;
+}
+.profileBox {
+    border-right: 3px solid var(--lightColor);
+    border-left: 3px solid var(--lightColor);
+    height: 300px;
+}
+.prifileImage  img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 7px solid var(--lightColor);
+    margin-top: 50px;
+}
+.profileBox p {
+    width: 200px;
+    padding: 5px 0px;
+    background-color: var(--lightColor);
+    color: var(--darkColor);
+    margin: 10px auto;
+    border-radius: 5px;
+    
+}
+.contactBox {
+    border-right: 3px solid var(--lightColor);
+    border-left: 3px solid var(--lightColor);
+}
+.columnRight h2 {
+    color: var(--greenDark2);
+}
+.devSkills {
+    padding: 0px 30px;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+}
+.devSkills span {
+    width: 150px;
+    height: 150px;
+}
+
+.designSkills {
+    padding: 100px;
+}
+.Fskills {
+    margin-top: 50px;
+}
+.Dskills {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.studies {
+    border: 1px solid var(--lightColor);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 500px;
+    padding: 0px 5px;
+    margin: 10px auto;
+    
+}
+
+.languageBox {
+    margin: 50px auto;
+}
+
+.contacts a {
+    color: var(--greenDark2);
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.contacts a:hover {
+    color: var(--lightColor);
+}

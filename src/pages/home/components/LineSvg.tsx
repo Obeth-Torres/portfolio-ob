@@ -4,6 +4,7 @@ import './lineSvg.css'
 
 const LineSvg = () => {
   const [lengthSvg, setLengthSvg] = useState(0)
+
   useEffect(() => {
     const updateLength = () => {
       setLengthSvg(window.scrollY)
@@ -19,7 +20,7 @@ const LineSvg = () => {
         <g id="Capa_1">
         </g>
            <g id="Capa_2">
-          <path 
+          <path className='pathLine'
           strokeDasharray={"4000 4000"}
           strokeDashoffset={2950 -(lengthSvg *2)}
           

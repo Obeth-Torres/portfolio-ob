@@ -1,7 +1,9 @@
 
 .titleVideo {
-    width: 600px;
-    position: absolute;
+    width: 600px;    
+    clip-path: url(#text-path);
+    margin: -150px auto ;
+    
 }
 
 video {
@@ -11,8 +13,4 @@ video {
 .titleVideo svg{
     height: 0;
     width: 0;
-}
-.titleVideo {
-    clip-path: url(#text-path);
-    margin-top: -100px;
 }

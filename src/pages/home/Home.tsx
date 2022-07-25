@@ -9,7 +9,12 @@ import './home.css'
 
 const Home = () => {
   const myRef = useRef(null!);
+  const myRef2 = useRef(null!)
+  const contactRef = useRef(null!)
+
   const [myTitleisVisible, setMyTitleisVisible] = useState(Boolean)
+  const [myTitle2, setMyTitle2] = useState(Boolean)
+  const [contactIsVisible, setContactIsVisible] = useState(Boolean)
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -17,6 +22,18 @@ const Home = () => {
       setMyTitleisVisible(entry.isIntersecting)
     })
     observer.observe(myRef.current )
+
+    const observer2 = new IntersectionObserver((entries) => {
+      const entry2 = entries[0];
+      setMyTitle2(entry2.isIntersecting)      
+    })
+    observer2.observe(myRef2.current)
+
+    const observer3 = new IntersectionObserver((entries) => {
+      const entry3 = entries[0];
+      setContactIsVisible(entry3.isIntersecting)
+    })
+    observer3.observe(contactRef.current)
   }, [])
   
   return (
@@ -37,34 +54,35 @@ const Home = () => {
           </span>
           
         </h1>
-        <div className="gridOfHexagons">
+        <div  className={`${myTitleisVisible ? 'gridOfHexagons visibleH' : 'gridOfHexagons' }`}>
           
-          <div><GridHexagons skills="CSS " /></div>
+          <div ><GridHexagons skills="CSS " /></div>
           <div><GridHexagons skills="HTML" /></div>
           <div><GridHexagons skills="JS" /> </div>
         </div>
-        <div className="gridOfHexagons last">
+        <div className={`${myTitleisVisible ? 'gridOfHexagons last visibleH' : 'gridOfHexagons last' }`}>
           <div><GridHexagons skills="React"  /></div>
           <div><GridHexagons skills="Angular"  /></div>
         </div>
 
-        <h1  >
+        <h1  ref={myRef2}>
          
-            <span className= {`${myTitleisVisible ? 'visible' : ''} `} >
+            <span  className={`${myTitle2 ? 'visible' : ''}`}>
               Design Skills
             </span>
           
         </h1>
         <p>Aplicaciones de Adobe</p>
-        <div className="gridOfHexagons">
+        <div className= {`${myTitle2 ? "gridOfHexagons visibleH" : "gridOfHexagons"}`} >
           
           <div><GridHexagons skills="Photoshop " /></div>
           <div><GridHexagons skills="Illustrator" /></div>
           <div><GridHexagons skills="Indesign" /> </div>
         </div>
         <div>
-          <div className="contact">
-            <h1>CONTACT</h1>
+          <div ref={contactRef}
+           className= {`${contactIsVisible ? "contact visibleH" : "contact"}`} >
+            <h1 className= {`${contactIsVisible ? "visible" : ""}`}>CONTACT</h1>
             <p>send me a mail</p>
           </div>          
         </div>        

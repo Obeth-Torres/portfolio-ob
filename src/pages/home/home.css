@@ -3,6 +3,7 @@
   --secondaryColor:#374659;
   --lightColor: #B4D4ED;
   --darkColor: rgba(32, 44, 58, 1);
+  --greenDark2: #3b554b;
   --hw : 110;
   --wh : ((50*$hw)/86)*1px;
 }
@@ -71,8 +72,12 @@
   padding: 0px 20px;
   border-radius: 5px;
   animation-name: title;
-  animation-duration: 5s ;
-  animation-fill-mode: forwards;
+  animation-duration: 1.5s ;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.visibleH {
+  animation-name: hexagons;
+  animation-duration: 1.5s;
 }
 
 @keyframes title {
@@ -82,9 +87,18 @@
   }
   to {
     margin-left: 0%;
-    border: #6FA692 solid 4px;
   }
 }
+
+@keyframes hexagons {
+  from {
+    transform: rotate(35deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
 /* Color Theme Swatches in Hex */
 .The-NM-Laboratory-|-Full-CGI-1-hex { color: #364559; }
 .The-NM-Laboratory-|-Full-CGI-2-hex { color: #7C8EA6; }

@@ -1,0 +1,15 @@
+.dasharrayLine {    
+    animation: dashAnimation;
+    animation-duration: 3s;
+    animation-delay: 1500;
+    animation-timing-function: ease-out;
+}
+
+@keyframes dashAnimation {
+    from{
+        stroke-dasharray: 0 400;
+    }
+    to {
+        stroke-dasharray: 400 400;
+    }
+}

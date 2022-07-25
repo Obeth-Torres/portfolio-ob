@@ -1,0 +1,13 @@
+.circleSkill #Capa_2 {
+    animation: dashoffset 6s linear forwards;
+    animation-direction: alternate;
+}
+
+@keyframes dashoffset {
+    0% {
+        stroke-dashoffset: 350;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
