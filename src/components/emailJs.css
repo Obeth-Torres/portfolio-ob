@@ -1,9 +1,13 @@
 .emailJs {
-    width: 500px;
-    height: 500px;
-    border: 2px solid #364559;
-    margin: 100px auto;
-    text-align: center;    
+  margin-top: -100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: #45586f;
+  color: var(--lightColor);
+  text-align: center;    
+  border-left: 3px solid var(--darkColor);
+  border-bottom: 3px solid var(--darkColor);
 }
 
 .emailJs form div {
@@ -20,3 +24,52 @@
 .emailJs input {
     height: 35px;
 }
+
+.sendBtn {
+  width: 150px;
+  background-color: var(--primaryColor);
+  border: none;
+  border-radius: 10px;
+  color: var(--lightColor);
+  border-left: 3px solid var(--darkColor);
+  border-bottom: 3px solid var(--darkColor);
+}
+.sendBtn:hover {
+  background-color: #55d9a6;
+  color: var(--darkColor);
+}
+.confirmMessage {    
+    background-color: #55d9a6;
+    color: var(--darkColor);
+    border-radius: 10px;
+    position: fixed;
+    top: 20%;
+    width: 500px; 
+    font-size: 1.5rem;
+}
+
+#show {
+    visibility: visible;
+    animation: fadeIn 0.5, fadeOut 0.5s 2.5s;
+}
+#hide {
+    visibility: hidden;
+}
+
+@keyframes fadeIn  {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }

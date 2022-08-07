@@ -1,42 +1,61 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import './emailJs.css'
 
 const EmailJs = () => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [message, setMessage] = useState('')
+    const [showConfirm, setShowConfirm] = useState(false)
+
 
     const form = useRef(null!);
-
-    const sendEmail = (e: any) => {
-        e.preventDefault();
-    
+    const sendEmail = (e: React.FormEvent) => {
+        e.preventDefault();    
         emailjs.sendForm('service_l11m0di', 'template_2puahmw', form.current, 'SeD_fiZlU72aEFMCI')
         .then((result) => {
             console.log(result.text);
+            setName('')
+            setEmail('')
+            setMessage('')
+            setShowConfirm(true)
+            setTimeout(() => {
+                setShowConfirm(false)
+            }, 3000)
         }, (error) => {
             console.log(error.text);
-        });
+        });        
     };
-
+    const nameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setName(e.currentTarget.value)
+    }
+    const emailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setEmail(e.currentTarget.value)
+    }
+    const messageChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+        setMessage(e.currentTarget.value)
+    }
   return (
-    <div className='emailJs'>
+    <div className='emailJs'  >
         <h3>Let's get in touch!!!</h3>
         <form ref={form} onSubmit={sendEmail}>
             <div>
                 <label>Name</label>
-                <input type="text" name="user_name" /> 
+                <input  type="text" name="user_name" required value={name} onChange={nameChange} /> 
             </div>
             <div>
                 <label>Email</label>
-                <input type="email" name="user_email" />
+                <input  type="email" name="user_email" required value={email} onChange={emailChange}/>
             </div>
             <div>
                 <label>Message</label>
-                <textarea name="message" rows={10} />
-            </div>
-                       
-            <input type="submit" value="Send" />
-            
+                <textarea  name="message" rows={10} required value={message} onChange={messageChange}/>
+            </div>                       
+            <input className='sendBtn' type="submit" value="Send" />            
         </form>
+        <div className="confirmMessage" id={showConfirm ? 'show' : 'hide'} >
+            <p>Great!!! We are in touch now!!!</p>
+        </div>
     </div>
   )
 }

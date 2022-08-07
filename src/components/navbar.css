@@ -26,6 +26,9 @@
     color: #b4d4ed;       
     margin: 10px;
 }
+.homeIcon a {
+    color: #b4d4ed;
+}
 
 
 .navLinks {
@@ -33,10 +36,18 @@
     justify-self: center;
     align-items: center;
     gap: 20px;
+
 }
   
-.navbar a {
+
+.isActive {
     color: #b4d4ed;
+}
+.notActive {
+    color: var(--primaryColor);
+}
+.navbar a {
     text-decoration: none;
     font-size: 1.2rem;
+    
 }

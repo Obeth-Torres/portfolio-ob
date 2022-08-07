@@ -5,12 +5,13 @@ import Square from './components/Square'
 import './education.css'
 import uxProfile from '../../assets/images/uxProfile.png'
 import { FaCodepen, FaGithub } from "react-icons/fa"
-
+import cv from '../../assets/cv.pdf'
 
 const Education = () => {
   return (
     <div className='education'>
         <h1>Resume</h1>
+        <a href={cv} target='_blank' download >download cv</a>
         <div className="cv">
             <div className="profileBox">
                 <div >
