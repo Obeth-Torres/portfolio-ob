@@ -1,8 +1,50 @@
  .projectsPage {
     width: 100wh;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    background-color: var(--primaryColor);
+    padding-bottom: 100px;
 } 
+.projectsPage h2, .smallProjects h2 {
+    padding: 30px;
+    color: var(--darkColor);
+}
+.pageProjects, .smallProjects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.bigProject {
+    display: block;
+    border: 10px solid var(--lightColor);
+    width: 400px;
+    height: 400px;
+}
+.bigProject:hover {
+    border: 10px solid #55d9a6;
+}
+.sPro {
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--lightColor);    
+}
+.boxSmallProject {
+    display: block;
+}
+.boxSmallProject:hover {
+    background-color: #55d9a6;
+}
+.textProject {
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    border: 2px solid var(--lightColor);
+    margin-bottom: 2px;
+    color: var(--darkColor);
+    padding-bottom: 5px;
+} 
+.boxSmallProject a {
+    text-decoration: none;
+}

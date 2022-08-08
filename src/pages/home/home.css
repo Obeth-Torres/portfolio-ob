@@ -4,6 +4,7 @@
   --lightColor: #B4D4ED;
   --darkColor: rgba(32, 44, 58, 1);
   --greenDark2: #3b554b;
+  --okColor: #55d9a6;
   --hw : 110;
   --wh : ((50*$hw)/86)*1px;
 }

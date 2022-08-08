@@ -1,0 +1,136 @@
+
+.tfmNav h4, .tfmNav h5{
+    margin: 0px;
+}
+.tfmNav {
+    background-color: #21b5c3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    color: #ffff;
+    padding-left: 20px;
+    height: 66px;
+}
+.tfmNavB {
+    background-color: #21b5c3;
+    height: 66px;
+    margin-top: -3px;
+    color: #ffff;
+}
+.tfmNavB p {
+    margin: 0px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tfm img {
+    width: 400px;
+}
+
+.tfm a {
+    text-decoration: none;
+}
+
+/* consulta psicoanalítica online */
+
+.consulta {
+    display: block;
+    height: 400px;
+    background-color: #97b1af;
+    text-align: center;
+    color: #e4f2f3;
+    display: flex;
+    justify-content: center;
+}
+
+.consulta a {
+    text-decoration: none;
+}
+
+.consulta h2 {
+    margin: 50px 0px ;
+    color: #e4f2f3;
+}
+
+.btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #e4f2f3;
+    justify-items: center;
+}
+.btn {
+    background: #546666;
+    color: #e4f2f3;
+    width: 150px;
+    height: 33px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Pixel animation */
+.pixelAnimation {
+    height: 100%;
+    background-color: black;
+    
+}
+.pixelAnimation img {
+    margin-left: 30px;
+}
+
+/* a game */
+
+.agame {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.agame span {
+    width: 58px;
+    height: 58px;
+    border: 1px solid var(--lightColor);
+    margin: 1px;
+    background-color: magenta;
+    color: #e4f2f3;
+    text-align: center;
+    
+}
+
+/* wrodle game */
+.wrodleGame {
+    text-align: center;
+    background-color: #202c3a;
+    color: var(--lightColor);
+    height: 100%;
+}
+.box {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--lightColor);
+    margin: 10px auto;
+
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    width: 200px;
+    justify-content: center;
+    margin: 0px auto;
+}
+.world{
+    width: 20px;
+    height: 20px;
+    border:  1px solid var(--lightColor);
+}
+
+.wrodleGame h5, .wrodleGame h6 {
+    margin: 0px;
+    padding-top: 10px;
+}
+.wrodleGame .line {
+    height: 1px;
+    width: 200px;
+    background-color: var(--lightColor);
+    margin: 0px auto;
+}

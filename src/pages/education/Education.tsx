@@ -6,12 +6,14 @@ import './education.css'
 import uxProfile from '../../assets/images/uxProfile.png'
 import { FaCodepen, FaGithub } from "react-icons/fa"
 import cv from '../../assets/cv.pdf'
+import { AiOutlineFilePdf } from "react-icons/ai";
+import { Link } from 'react-router-dom'
 
 const Education = () => {
   return (
     <div className='education'>
         <h1>Resume</h1>
-        <a href={cv} target='_blank' download >download cv</a>
+                
         <div className="cv">
             <div className="profileBox">
                 <div >
@@ -93,22 +95,13 @@ const Education = () => {
                     
                 </div>
             </div>
+            
 
-            <div className="contactBox">
-                <h2>CONTACT</h2>
-                <div className="contacts">
-                    <p>365782236</p>
-                    <p>Madrid Spain</p>
-                    <p>torresobeth@gmail.com</p>
-                    <a href="https://codepen.io/obeth-torres">
-                        <p><FaGithub/> </p> 
-                    </a>
-                    <a href="https://github.com/Obeth-Torres">
-                       <p><FaCodepen/></p>
-                    </a>
-                    
-                    
-                </div>
+            <div className="contactBox">   
+                <div className="pdfLink">
+                    <a href={cv} target='_blank' download >download in <AiOutlineFilePdf/></a>
+                </div>      
+                
             </div>  
             
         </div>

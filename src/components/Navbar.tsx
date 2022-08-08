@@ -16,7 +16,7 @@ const Navbar = () => {
                 <div className="homeIcon"> <Link to="/"> <FaHome/> </Link>  </div>
                 <div className="navLinks">
 
-                    <NavLink to="/" className={({isActive}) => isActive ? activeClassName : notActive}>About</NavLink>
+                    <NavLink to="about" className={({isActive}) => isActive ? activeClassName : notActive}> About </NavLink>
                     <NavLink to="education" className={({isActive}) => isActive ? 'isActive' : notActive}>Education</NavLink>
                     <NavLink to="projects" className={({isActive}) => isActive ? activeClassName : 'notActive'}>Projects</NavLink>
                     <NavLink to='contact' className={({isActive}) => isActive ? activeClassName : 'notActive'} >Contact</NavLink>

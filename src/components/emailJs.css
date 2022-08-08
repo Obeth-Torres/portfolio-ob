@@ -3,11 +3,10 @@
   width: 500px;
   height: 500px;
   border-radius: 10px;
-  background-color: #45586f;
+  background-color: var(--darkColor);
   color: var(--lightColor);
   text-align: center;    
-  border-left: 3px solid var(--darkColor);
-  border-bottom: 3px solid var(--darkColor);
+  box-shadow: 20px 20px 15px 15px #618c7c;
 }
 
 .emailJs form div {
@@ -31,8 +30,8 @@
   border: none;
   border-radius: 10px;
   color: var(--lightColor);
-  border-left: 3px solid var(--darkColor);
-  border-bottom: 3px solid var(--darkColor);
+  border-right: 2px solid #5d8c7f;
+  border-bottom: 2px solid #5d8c7f;
 }
 .sendBtn:hover {
   background-color: #55d9a6;

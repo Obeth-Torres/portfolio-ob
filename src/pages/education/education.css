@@ -1,7 +1,27 @@
 .education {
     background-color: var(--primaryColor);
-    margin-top: 0px;
-    
+    margin-top: 0px;    
+}
+.pdfLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: var(--darkColor);
+    width: 200px;
+    height: 50px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.pdfLink:hover {
+    background-color: #55d9a6;
+}
+.pdfLink:hover a {
+    color: var(--darkColor);
+}
+.education a {
+    text-decoration: none;
+    color: var(--lightColor);
 }
 .education h1 {
     margin: 0px;
@@ -40,11 +60,12 @@
     
 }
 .contactBox {
+    height: 200px;
     border-right: 3px solid var(--lightColor);
     border-left: 3px solid var(--lightColor);
 }
 .columnRight h2 {
-    color: var(--greenDark2);
+    color: var(--darkColor);
 }
 .devSkills {
     padding: 0px 30px;
@@ -85,11 +106,14 @@
 }
 
 .contacts a {
-    color: var(--greenDark2);
+    color: var(--darkColor);
     font-size: 2rem;
     text-decoration: none;
 }
 
 .contacts a:hover {
-    color: var(--lightColor);
+    color: var(--okColor);
+}
+.btnContact h2 {
+    color: var(--darkColor);
 }
