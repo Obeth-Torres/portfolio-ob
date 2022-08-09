@@ -4,10 +4,8 @@ import Language from './components/Language'
 import Square from './components/Square'
 import './education.css'
 import uxProfile from '../../assets/images/uxProfile.png'
-import { FaCodepen, FaGithub } from "react-icons/fa"
-import cv from '../../assets/cv.pdf'
+import cv from '../../assets/cv-obeth.pdf'
 import { AiOutlineFilePdf } from "react-icons/ai";
-import { Link } from 'react-router-dom'
 
 const Education = () => {
   return (
@@ -20,7 +18,7 @@ const Education = () => {
                     <div className="prifileImage">
                         <img src={uxProfile} alt="Obeth Torres Moreno" />
                     </div>
-                    <p>Oeth Torres Moreno</p> 
+                    <p>Obeth Torres Moreno</p> 
                 </div>
                               
             </div>
@@ -31,10 +29,10 @@ const Education = () => {
                     <h2>Frontend skills</h2>
                     <div className='devSkills'>
                         <span><Circle name='HTML' level={375} /></span>
-                        <span><Circle name='CSS' level={375}/></span>
+                        <span><Circle name=' CSS' level={375}/></span>
                         <span>  <Circle name='JS - TS'level={365} /></span>
-                        <span><Circle name='Angular'level={350} /></span>
-                        <span><Circle name='React'level={365} /> </span>                 
+                        <span><Circle name='Angular 'level={350} /></span>
+                        <span><Circle name=' React'level={365} /> </span>                 
                     </div> 
                     <div className="designSkills">
                         <h2>Design Skills</h2>

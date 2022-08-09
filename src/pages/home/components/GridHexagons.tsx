@@ -15,7 +15,7 @@ const GridHexagons = ({skills}:Hexagon) => {
             <g id="Capa_3">
                 <g>
                     <rect x="27.198" y="149.931" fill="none" width="327.928" height="47.177"/>
-                    <text textAnchor='middle' transform="matrix(1 0 0 1 174.3062 194.5259)" fill="#DEE9F5" font-family="'ArialMT'" font-size="48">{skills }</text>
+                    <text textAnchor='middle' transform="matrix(1 0 0 1 196.3062 194.5259)" fill="#DEE9F5" font-family="'ArialMT'" font-size="48">{skills }</text>
                 </g>
             </g>
             <g id="Capa_2">

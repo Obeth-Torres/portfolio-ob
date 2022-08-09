@@ -5,6 +5,7 @@ import GridHexagons from "./components/GridHexagons"
 import LineSvg from "./components/LineSvg"
 import { useRef, useEffect, useState } from "react"
 import './home.css'
+import EmailJs from "../../components/EmailJs"
 
 
 const Home = () => {
@@ -54,14 +55,20 @@ const Home = () => {
           </span>
           
         </h1>
-        <div  className={`${myTitleisVisible ? 'gridOfHexagons visibleH' : 'gridOfHexagons' }`}>
-          
-          <div ><GridHexagons skills="CSS " /></div>
-          <div><GridHexagons skills="HTML" /></div>
-          <div><GridHexagons skills="JS" /> </div>
+        <div  className={`${myTitleisVisible ? 'gridOfHexagons visibleH' : 'gridOfHexagons' }`}>          
+          <div >
+            <GridHexagons skills=" CSS " /> 
+          </div>
+          <div >
+            <GridHexagons skills=" HTML" />
+          </div>
+          <div >
+            <GridHexagons skills=" JS" />
+          </div>
         </div>
+
         <div className={`${myTitleisVisible ? 'gridOfHexagons last visibleH' : 'gridOfHexagons last' }`}>
-          <div><GridHexagons skills="React"  /></div>
+          <div><GridHexagons skills=" React"  /></div>
           <div><GridHexagons skills="Angular"  /></div>
         </div>
 
@@ -82,8 +89,7 @@ const Home = () => {
         <div>
           <div ref={contactRef}
            className= {`${contactIsVisible ? "contact visibleH" : "contact"}`} >
-            <h1 className= {`${contactIsVisible ? "visible" : ""}`}>CONTACT</h1>
-            <p>send me a mail</p>
+            <EmailJs/>
           </div>          
         </div>        
       </div>

@@ -41,15 +41,15 @@ const EmailJs = () => {
         <form ref={form} onSubmit={sendEmail}>
             <div>
                 <label>Name</label>
-                <input  type="text" name="user_name" required value={name} onChange={nameChange} /> 
+                <input className='emailInput'  type="text" name="user_name" required value={name} onChange={nameChange} /> 
             </div>
             <div>
                 <label>Email</label>
-                <input  type="email" name="user_email" required value={email} onChange={emailChange}/>
+                <input className='emailInput'  type="email" name="user_email" required value={email} onChange={emailChange}/>
             </div>
             <div>
                 <label>Message</label>
-                <textarea  name="message" rows={10} required value={message} onChange={messageChange}/>
+                <textarea className='emailInput'  name="message" rows={10} required value={message} onChange={messageChange}/>
             </div>                       
             <input className='sendBtn' type="submit" value="Send" />            
         </form>

@@ -9,7 +9,7 @@ const ConsultaOnline = () => {
         <div className="btns">
             <div >
                 <p>Consulta como</p>
-                <h4 className="btn">Analisante</h4>
+                <h4 className="btn">Analizante</h4>
             </div>
             <div >
                 <p>Consulta como</p>

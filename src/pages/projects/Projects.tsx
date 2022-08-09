@@ -31,19 +31,19 @@ const Proyects = () => {
         </div>
         <div className="boxSmallProject">
           <a href="https://codepen.io/obeth-torres/pen/bGvbZgq">
-          <div className="textProject"> <p>this es a spacial and logic game do id with arrays </p></div>
+          <div className="textProject"> <p>This es a spacial and logic game do id with arrays </p></div>
           <div className='sPro'> <Agame/> </div>
           </a>
         </div>
         <div className="boxSmallProject">
           <a href="https://codepen.io/obeth-torres/pen/poaONxd">
-          <div className="textProject"><p>this is game inspired by the famous wrodle-game</p></div>
+          <div className="textProject"><p>This is game inspired by the famous wrodle-game</p></div>
           <div className='sPro'> <Wrodle/></div>
           </a>
         </div>
         <div className="boxSmallProject">
           <a href="https://codepen.io/obeth-torres/pen/vYdMYvQ">
-          <div className="textProject"><p>this is a pixel animation made with canvas </p></div>
+          <div className="textProject"><p>This is a pixel animation made with canvas </p></div>
           <div className='sPro'> <Pixelanimation/></div></a>
         </div>
         

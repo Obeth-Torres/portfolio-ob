@@ -46,9 +46,11 @@
 .contact {
   margin: 0px auto;
   width: 500px;
-  height: 300px;
-  border: 2px solid var(--lightColor);
-  margin-top: 200px;
+  height: 600px;
+  margin-top: 230px;
+}
+.contact h3 {
+  padding-top: 20px;
 }
 
 .linesvg {
@@ -99,24 +101,3 @@
     transform: rotate(0deg);
   }
 }
-
-/* Color Theme Swatches in Hex */
-.The-NM-Laboratory-|-Full-CGI-1-hex { color: #364559; }
-.The-NM-Laboratory-|-Full-CGI-2-hex { color: #7C8EA6; }
-.The-NM-Laboratory-|-Full-CGI-3-hex { color: #B3D5F2; }
-.The-NM-Laboratory-|-Full-CGI-4-hex { color: #5D8C7F; }
-.The-NM-Laboratory-|-Full-CGI-5-hex { color: #6FA692; }
-
-/* Color Theme Swatches in RGBA */
-.The-NM-Laboratory-|-Full-CGI-1-rgba { color: rgba(53, 69, 89, 1); }
-.The-NM-Laboratory-|-Full-CGI-2-rgba { color: rgba(124, 142, 165, 1); }
-.The-NM-Laboratory-|-Full-CGI-3-rgba { color: rgba(179, 212, 242, 1); }
-.The-NM-Laboratory-|-Full-CGI-4-rgba { color: rgba(92, 140, 126, 1); }
-.The-NM-Laboratory-|-Full-CGI-5-rgba { color: rgba(111, 165, 145, 1); }
-
-/* Color Theme Swatches in HSLA */
-.The-NM-Laboratory-|-Full-CGI-1-hsla { color: hsla(213, 25, 27, 1); }
-.The-NM-Laboratory-|-Full-CGI-2-hsla { color: hsla(213, 18, 56, 1); }
-.The-NM-Laboratory-|-Full-CGI-3-hsla { color: hsla(208, 71, 82, 1); }
-.The-NM-Laboratory-|-Full-CGI-4-hsla { color: hsla(163, 20, 45, 1); }
-.The-NM-Laboratory-|-Full-CGI-5-hsla { color: hsla(157, 23, 54, 1); }

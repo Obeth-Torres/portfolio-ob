@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaCodepen, FaGithub } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import { FaHome } from 'react-icons/fa'
 import './navbar.css'
 
 const Footer = () => {
@@ -12,12 +13,18 @@ const Footer = () => {
   let notActive = 'notActive'
   return (
     <div className="footer">
-      <div className="navLinks">
-        <NavLink to="about" className={({isActive}) => isActive ? activeClassName : notActive}>About</NavLink>
-        <NavLink to="education" className={({isActive}) => isActive ? 'isActive' : notActive}>Education</NavLink>
-        <NavLink to="projects" className={({isActive}) => isActive ? activeClassName : 'notActive'}>Projects</NavLink>
-        <NavLink to='contact' className={({isActive}) => isActive ? activeClassName : 'notActive'} >Contact</NavLink>
+      <div className="navfooter">
+        <div className="homeIcon"> <Link to="/"> <FaHome/> </Link>  </div>      
+        <div className="navLinks">
+          <NavLink to="about" className={({isActive}) => isActive ? activeClassName : notActive}>About</NavLink>
+          <NavLink to="education" className={({isActive}) => isActive ? 'isActive' : notActive}>Education</NavLink>
+          <NavLink to="projects" className={({isActive}) => isActive ? activeClassName : 'notActive'}>Projects</NavLink>
+          <NavLink to='contact' className={({isActive}) => isActive ? activeClassName : 'notActive'} >Contact</NavLink>
+        </div>
+        <div className="logoOB"><span>OB </span> </div>
       </div>
+      
+
 
       <div className='mediaSites'>
           <a href="https://codepen.io/your-work"><FaCodepen/></a>
