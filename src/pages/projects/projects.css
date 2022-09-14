@@ -48,3 +48,19 @@
 .boxSmallProject a {
     text-decoration: none;
 }
+.shopTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0FC2C0;
+    padding: 0px 10px;
+    color: #023535;
+}
+.littleShop {
+    background-color: #023535;    
+}
+.shopBody {
+    height: 180px;
+    color: #0FC2C0;
+    text-align: center;
+}
