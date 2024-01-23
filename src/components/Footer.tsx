@@ -16,10 +16,10 @@ const Footer = () => {
       <div className="navfooter">
         <div className="homeIcon"> <Link to="/"> <FaHome/> </Link>  </div>      
         <div className="navLinks">
-          <NavLink to="about" className={({isActive}) => isActive ? activeClassName : notActive}>About</NavLink>
-          <NavLink to="education" className={({isActive}) => isActive ? 'isActive' : notActive}>Education</NavLink>
-          <NavLink to="projects" className={({isActive}) => isActive ? activeClassName : 'notActive'}>Projects</NavLink>
-          <NavLink to='contact' className={({isActive}) => isActive ? activeClassName : 'notActive'} >Contact</NavLink>
+          <NavLink to="about" className={({isActive}) => isActive ? activeClassName : notActive}>Sobre mi</NavLink>
+          <NavLink to="education" className={({isActive}) => isActive ? 'isActive' : notActive}>Educasión</NavLink>
+          <NavLink to="projects" className={({isActive}) => isActive ? activeClassName : 'notActive'}>Proyectos</NavLink>
+          <NavLink to='contact' className={({isActive}) => isActive ? activeClassName : 'notActive'} >Contacto</NavLink>
         </div>
         <div className="logoOB"><span>OB </span> </div>
       </div>
@@ -31,7 +31,7 @@ const Footer = () => {
           <a href="https://github.com/Obeth-Torres"><FaGithub /> </a>
           
       </div>
-      <p>portfolio &copy; Obeth Torres Moreno 2022</p>
+      <p>portfolio &copy; Obeth Torres Moreno 2024</p>
     </div>
   
   )

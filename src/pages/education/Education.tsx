@@ -10,7 +10,7 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 const Education = () => {
   return (
     <div className='education'>
-        <h1>Resume</h1>
+        <h1>Curriculum Vitae</h1>
                 
         <div className="cv">
             <div className="profileBox">
@@ -26,7 +26,7 @@ const Education = () => {
 
             <div className="columnRight">
                 <div className="Fskills">
-                    <h2>Frontend skills</h2>
+                    <h2>Habilidades Frontend </h2>
                     <div className='devSkills'>
                         <span><Circle name='HTML' level={375} /></span>
                         <span><Circle name=' CSS' level={375}/></span>
@@ -35,7 +35,7 @@ const Education = () => {
                         <span><Circle name=' React'level={365} /> </span>                 
                     </div> 
                     <div className="designSkills">
-                        <h2>Design Skills</h2>
+                        <h2>Habilidades de Edición y diseño</h2>
                         <div className="Dskills">                        
                             <Square name='Ps' />
                             <Square name='Ai' />
@@ -45,7 +45,17 @@ const Education = () => {
                     
                 </div>
                 <div className="education">
-                    <h2>EDUCATION</h2>
+                    <h2>EDUCACIÓN</h2>
+
+                    <div className="studies">
+                        <div>
+                        <p>Desarrollo WEB</p>
+                        <p>2020  -  2024</p>
+                        <h4>De forma Autodidacta</h4> 
+                        </div>                    
+                        <h3>EN LA WEB</h3>
+                    </div>
+
                     <div className="studies">
                         <div>
                         <p>Master en Filosofía Téorica y Práctica</p>
@@ -88,7 +98,7 @@ const Education = () => {
                     </div> 
                 </div>
                 <div className="languageBox">
-                    <h2>LANGUAGE</h2>
+                    <h2>LANGUAJES</h2>
                     <Language/>
                     
                 </div>
@@ -97,7 +107,7 @@ const Education = () => {
 
             <div className="contactBox">   
                 <div className="pdfLink">
-                    <a href={cv} target='_blank' download >download in <AiOutlineFilePdf/></a>
+                    <a href={cv} target='_blank' download >Descarga en pdf <AiOutlineFilePdf/></a>
                 </div>      
                 
             </div>  

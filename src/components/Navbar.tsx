@@ -16,10 +16,10 @@ const Navbar = () => {
                 <div className="homeIcon"> <Link to="/"> <FaHome/> </Link>  </div>
                 <div className="navLinks">
 
-                    <NavLink to="about" className={({isActive}) => isActive ? activeClassName : notActive}> About </NavLink>
-                    <NavLink to="education" className={({isActive}) => isActive ? 'isActive' : notActive}>Education</NavLink>
-                    <NavLink to="projects" className={({isActive}) => isActive ? activeClassName : 'notActive'}>Projects</NavLink>
-                    <NavLink to='contact' className={({isActive}) => isActive ? activeClassName : 'notActive'} >Contact</NavLink>
+                    <NavLink to="about" className={({isActive}) => isActive ? activeClassName : notActive}> Sobre mi </NavLink>
+                    <NavLink to="education" className={({isActive}) => isActive ? 'isActive' : notActive}>Formación</NavLink>
+                    <NavLink to="projects" className={({isActive}) => isActive ? activeClassName : 'notActive'}>Proyectos</NavLink>
+                    <NavLink to='contact' className={({isActive}) => isActive ? activeClassName : 'notActive'} >Contacto</NavLink>
                 </div>            
                 <div className="logoOB"><span>OB </span> </div>
             </div>         

@@ -40,7 +40,7 @@ const EmailJs = () => {
         <h3>Let's get in touch!!!</h3>
         <form ref={form} onSubmit={sendEmail}>
             <div>
-                <label>Name</label>
+                <label>Nombre</label>
                 <input className='emailInput'  type="text" name="user_name" required value={name} onChange={nameChange} /> 
             </div>
             <div>
@@ -48,10 +48,10 @@ const EmailJs = () => {
                 <input className='emailInput'  type="email" name="user_email" required value={email} onChange={emailChange}/>
             </div>
             <div>
-                <label>Message</label>
+                <label>Mensaje</label>
                 <textarea className='emailInput'  name="message" rows={10} required value={message} onChange={messageChange}/>
             </div>                       
-            <input className='sendBtn' type="submit" value="Send" />            
+            <input className='sendBtn' type="submit" value="Enviar mensaje" />            
         </form>
         <div className="confirmMessage" id={showConfirm ? 'show' : 'hide'} >
             <p>Great!!! We are in touch now!!!</p>

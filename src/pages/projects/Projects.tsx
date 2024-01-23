@@ -8,20 +8,30 @@ import Pixelanimation from './components/Pixelanimation'
 import Tfm from './components/Tfm'
 import Wrodle from './components/Wrodle'
 import './projects.css'
+import FullstackProject from './components/FullstackProject'
 
 const Proyects = () => {
 
   return (
     <div className="projectsPage">
-      <h2>Angular and React Projects</h2>
+
+      <h2>Proyectos desarrollados durante mi proceso de aprendizaje:</h2>
+
+      <div className="lasProject">
+         <FullstackProject/>
+      </div>
+
       <div className="pageProjects">
+        
         <div className='bigProject' >  
           <Tfm/>
         </div>
         <div className='bigProject'>
           <ConsultaOnline/>          
         </div>
+
       </div>  
+
       <h2>Small Projects</h2>
       <div className="smallProjects">        
         <div className="boxSmallProject">
