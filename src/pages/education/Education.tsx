@@ -26,20 +26,22 @@ const Education = () => {
 
             <div className="columnRight">
                 <div className="Fskills">
-                    <h2>Habilidades Frontend </h2>
+                    <h2>Habilidades Como Desarrollador </h2>
                     <div className='devSkills'>
                         <span><Circle name='HTML' level={375} /></span>
                         <span><Circle name=' CSS' level={375}/></span>
                         <span>  <Circle name='JS - TS'level={365} /></span>
                         <span><Circle name='Angular 'level={350} /></span>
-                        <span><Circle name=' React'level={365} /> </span>                 
+                        <span><Circle name=' React'level={365} /> </span>          
+                        <span><Circle name=' Django'level={365} /> </span>     
+                        <span><Circle name=' AWS'level={340} /></span>   
                     </div> 
                     <div className="designSkills">
                         <h2>Habilidades de Edición y diseño</h2>
                         <div className="Dskills">                        
-                            <Square name='Ps' />
-                            <Square name='Ai' />
-                            <Square name='Id' />
+                            <Square name='Ps' /> <p>Photoshop</p>
+                            <Square name='Ai' /> <p>Adobe Ilustrator</p>
+                            <Square name='Id' /> <p>Indesign</p>
                         </div>
                     </div>
                     

@@ -22,7 +22,6 @@ const Proyects = () => {
       </div>
 
       <div className="pageProjects">
-        
         <div className='bigProject' >  
           <Tfm/>
         </div>
