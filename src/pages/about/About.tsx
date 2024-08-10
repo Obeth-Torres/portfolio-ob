@@ -12,14 +12,13 @@ const About = () => {
          y como lo reflejo en mi <span>CV</span> , mis estudios formales han sido dedicados al
         campo de las <span>ciencias humanas.</span> <br/> Encuentro extraordinario el efecto que han
         estado teniendo nuestras nuevas tecnologías en todos los ámbitos de nuestra
-        existencia; han cambiado la forma en la que estudiamos, en la expresión del deseo, en el manejo de
-        los síntomas... entre otra muchas e innumerables cosas.<br/>
-        Por ello; me he ocupado de aprender a programar, tengo el anhelo de participar
+        existencia; han cambiado la forma en la que estudiamos, trabajamos, expresamos el deseo, manejamos nuestros síntomas, etc.<br/>
+        Por ello; me he ocupado de aprender a programar y tengo el anhelo de participar
         de este movimiento; particularmente en el desarrollo de la <span>experiencia de
-        usuario</span> y la construcción de la interfaz que posibilite esa experiencia. <br/>
-        <span>He aprendido a programar de forma autodidacta</span>, por lo que solo puedo
+        usuario</span> . <br/>
+        <span>En este esfuerzo he sido autodidacta</span>, por lo que solo puedo
         decirles con humildad que lo que escribo en mi CV es correcto y que estoy a su
-        disposición para realizar las entrevistas técnicas que así lo reflejen.
+        disposición para realizar las entrevistas técnicas necesarias.
         Sin más por el momento, reitero mi agradecimiento. <br/></p>
         
     
