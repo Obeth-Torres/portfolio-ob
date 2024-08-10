@@ -4,7 +4,7 @@ import './tfm.css'
 const ConsultaOnline = () => {
   return (
     <div className='consulta'>
-        <a href="https://consultapsicoanalitica.netlify.app/">  
+        <a href="https://consultapsicoanalitica.netlify.app/" target='_blank' rel="noopener noreferrer">  
         <h2>CONSULTA PSICOANALÍTICA ONLINE</h2>
         <div className="btns">
             <div >

@@ -9,6 +9,7 @@ import Tfm from './components/Tfm'
 import Wrodle from './components/Wrodle'
 import './projects.css'
 import FullstackProject from './components/FullstackProject'
+import ObBlog from './components/ObBlog'
 
 const Proyects = () => {
 
@@ -16,6 +17,10 @@ const Proyects = () => {
     <div className="projectsPage">
 
       <h2>Proyectos desarrollados durante mi proceso de aprendizaje:</h2>
+
+      <div className="blog">
+        <ObBlog />
+      </div>
 
       <div className="lasProject">
          <FullstackProject/>
@@ -34,31 +39,31 @@ const Proyects = () => {
       <h2>Small Projects</h2>
       <div className="smallProjects">        
         <div className="boxSmallProject">
-          <a href="https://my-lettle-shop.netlify.app">
+          <a href="https://my-lettle-shop.netlify.app" target='_blank' rel="noopener noreferrer">
           <div className="textProject"><p>This is a little shop made with React-typescript and Redux </p></div>
           <div className='sPro'> <LittleSchop/> </div>
           </a>
         </div>
         <div className="boxSmallProject">
-          <a href="https://codepen.io/obeth-torres/pen/vYRBMjW">
+          <a href="https://codepen.io/obeth-torres/pen/vYRBMjW" target='_blank' rel="noopener noreferrer">
           <div className="textProject"><p>This is a canvas animation of Jaques Lacan's knot theory</p></div>
           <div className='sPro'> <Nudo/> </div>
           </a>
         </div>
         <div className="boxSmallProject">
-          <a href="https://codepen.io/obeth-torres/pen/bGvbZgq">
+          <a href="https://codepen.io/obeth-torres/pen/bGvbZgq" target='_blank' rel="noopener noreferrer">
           <div className="textProject"> <p>This es a spacial and logic game do id with arrays </p></div>
           <div className='sPro'> <Agame/> </div>
           </a>
         </div>
         <div className="boxSmallProject">
-          <a href="https://codepen.io/obeth-torres/pen/poaONxd">
+          <a href="https://codepen.io/obeth-torres/pen/poaONxd" target='_blank' rel="noopener noreferrer">
           <div className="textProject"><p>A little game inspired by the famous wrodle-game</p></div>
           <div className='sPro'> <Wrodle/></div>
           </a>
         </div>
         <div className="boxSmallProject">
-          <a href="https://codepen.io/obeth-torres/pen/vYdMYvQ">
+          <a href="https://codepen.io/obeth-torres/pen/vYdMYvQ" target='_blank' rel="noopener noreferrer">
           <div className="textProject"><p>This is a pixel animation made with canvas </p></div>
           <div className='sPro'> <Pixelanimation/></div></a>
         </div>
